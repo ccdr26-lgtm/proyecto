@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Lenguajes de Programación</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Encabezado */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Navegación */
+        nav {
+            background-color: #2c3e50;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #3498db;
+        }
+        
+        /* Secciones */
+        section {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        section h3 {
+            color: #3498db;
+            margin: 20px 0 10px;
+        }
+        
+        section p {
+            margin-bottom: 15px;
+        }
+        
+        /* Contenedor de imagen y texto */
+        .image-text-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .image-text-container.reverse {
+            flex-direction: row-reverse;
+        }
+        
+        .image-container {
+            flex: 0 0 300px;
+            text-align: center;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .text-container {
+            flex: 1;
+        }
+        
+        /* Listas */
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        /* Tabla de clasificación */
+        .clasificacion-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .clasificacion-table th, .clasificacion-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .clasificacion-table th {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .clasificacion-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        /* Características */
+        .caracteristicas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .caracteristica {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .caracteristica h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        /* Aplicaciones */
+        .aplicaciones-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .aplicacion {
+            background-color: #f0f8ff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .aplicacion:hover {
+            transform: translateY(-5px);
+        }
+        
+        .aplicacion i {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+        
+        /* Pie de página */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            .image-text-container, .image-text-container.reverse {
+                flex-direction: column;
+            }
+            
+            .image-container {
+                flex: 0 0 auto;
+                margin-bottom: 15px;
+            }
+            
+            .caracteristicas-grid, .aplicaciones-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tipos de Lenguajes de Programación</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#que-son">¿Qué son?</a></li>
+            <li><a href="#diferencias">Diferencias</a></li>
+            <li><a href="#tipos">Tipos</a></li>
+            <li><a href="#funcionamiento">Funcionamiento</a></li>
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#importancia">Importancia</a></li>
+            <li><a href="#utilidad">Utilidad</a></li>
+            <li><a href="#aplicaciones">Aplicaciones</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="que-son">
+            <h2>1. ¿Qué son los lenguajes de programación?</h2>
+            <div class="image-text-container reverse">
+                <div class="image-container">
+                    <img src="img/IMAGEN-1.png" alt="Código de programación">
+                </div>
+                <div class="text-container">
+    <p>Los lenguajes de programación son la herramienta principal con la que los programadores pueden crear soluciones informáticas. A lo largo de la historia, se han desarrollado diversos lenguajes de programación que han evolucionado para adaptarse a las necesidades de los programadores y las empresas.</p>
+
+    <h3>Historia de los lenguajes de programación</h3>
+    <p>La historia de los lenguajes de programación se remonta a la década de 1950, cuando se crearon los primeros lenguajes de programación. Estos primeros lenguajes, como Fortran y Cobol, se desarrollaron para simplificar la programación de sistemas científicos y financieros.</p>
+    <p>Con el tiempo, los lenguajes de programación se han ido diversificando y evolucionando. En la década de 1970 se desarrollaron lenguajes como Pascal y C, que permitían una mayor flexibilidad y facilidad de programación. Estos lenguajes se convirtieron en la base de muchos otros lenguajes de programación que se desarrollaron posteriormente.</p>
+    <p>En la década de 1980 se crearon lenguajes de programación orientados a objetos, como C++ y Smalltalk. Estos lenguajes permitían una mayor modularidad en el código y una programación más eficiente y estructurada.</p>
+    <p>En la década de 1990 se desarrollaron lenguajes de programación web, como HTML, JavaScript y PHP, que permitían la creación de aplicaciones web y la interacción con el usuario a través de la web.</p>
+    <p>En la actualidad, los lenguajes de programación han evolucionado para adaptarse a las necesidades de la inteligencia artificial, el internet de las cosas y la informática en la nube. Lenguajes como Python, Java y Ruby se han convertido en los más populares para la creación de soluciones informáticas y la automatización de procesos.</p>
+            </div>
+        </section>
+        
+        <section id="diferencias">
+            <h2>2. Diferencias entre lenguaje natural y lenguaje de programación</h2>
+            <div class="image-text-container">
+                <div class="image-container">
+                    <img src="img/IMAGEN-2.png" alt="Comparación de lenguajes">
+                </div>
+                <div class="text-container">
+<p>Una persona se comunica usando lenguajes naturales como el español o el inglés, mientras que los lenguajes de programación están diseñados para que las máquinas comprendan instrucciones de forma precisa. Aunque ambos tipos de lenguaje comparten elementos como sintaxis, semántica y estructura, su propósito y funcionamiento son distintos.</p>
+
+<p>Los lenguajes de programación se caracterizan por ser:</p>
+<ul>
+    <li><strong>Precisos:</strong> Cada instrucción tiene un significado exacto, sin lugar a interpretaciones subjetivas.</li>
+    <li><strong>Estructurados:</strong> Siguen reglas sintácticas estrictas que deben cumplirse para que el código funcione correctamente.</li>
+    <li><strong>No ambiguos:</strong> No permiten interpretaciones múltiples; una instrucción solo puede significar una cosa.</li>
+    <li><strong>Deterministas:</strong> El mismo código, ejecutado en las mismas condiciones, siempre produce el mismo resultado.</li>
+    <li><strong>Formales:</strong> Están basados en lógica matemática y teoría de lenguajes formales.</li>
+    <li><strong>Predecibles:</strong> Cada acción está definida y controlada, lo que permite depurar y optimizar el comportamiento del programa.</li>
+</ul>
+
+<h3>Diferencias entre lenguajes naturales y lenguajes de programación</h3>
+<table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Lenguajes naturales</th>
+            <th>Lenguajes de programación</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Ambiguos y flexibles, permiten múltiples interpretaciones según el contexto.</td>
+            <td>Precisos y estrictos, cada instrucción tiene un único significado.</td>
+        </tr>
+        <tr>
+            <td>Evolucionan orgánicamente con el uso social y cultural.</td>
+            <td>Son diseñados artificialmente con reglas definidas por expertos.</td>
+        </tr>
+        <tr>
+            <td>Redundancia aceptada para reforzar el mensaje.</td>
+            <td>Evitan la redundancia para mantener claridad y eficiencia.</td>
+        </tr>
+        <tr>
+            <td>Interpretados por humanos con capacidad de inferencia.</td>
+            <td>Interpretados por máquinas que requieren instrucciones exactas.</td>
+        </tr>
+        <tr>
+            <td>Abiertos a creatividad y expresividad.</td>
+            <td>Limitados a estructuras definidas para evitar errores.</td>
+        </tr>
+    </tbody>
+</table>
+
+                </div>
+            </div>
+        </section>
+        
+        <section id="tipos">
+            <h2>3. Tipos de lenguajes de programación</h2>
+            <h3>Clasificación de los lenguajes de programación</h3>
+            
+            <div class="image-text-container reverse">
+                <div class="image-container">
+                    <img src="img/IMAGEN-5.png" alt="Jerarquía de lenguajes de programación">
+                </div>
+                <div class="text-container">
+                    <table class="clasificacion-table">
+                        <thead>
+                            <tr>
+                                <th>Tipo</th>
+                                <th>Descripción</th>
+                                <th>Ejemplos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Lenguaje máquina</strong></td>
+                                <td>El único lenguaje que la computadora entiende directamente, compuesto por ceros y unos (código binario).</td>
+                                <td>Código binario ejecutable</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lenguajes de bajo nivel</strong></td>
+                                <td>Lenguajes cercanos al hardware que utilizan mnemotécnicos para representar instrucciones de máquina.</td>
+                                <td>Assembly, Lenguaje ensamblador</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lenguajes de alto nivel</strong></td>
+                                <td>Lenguajes más cercanos al lenguaje humano, independientes del hardware y que requieren compilación o interpretación.</td>
+                                <td>Python, Java, C++, JavaScript</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="image-text-container">
+                <div class="image-container">
+                    <img src="img/IMAGEN-4.png" alt="Ejemplos de lenguajes de programación">
+                </div>
+                <div class="text-container">
+                    <h3>Ejemplos de lenguajes populares</h3>
+                    <p>Existen cientos de lenguajes de programación, cada uno con sus fortalezas y áreas de aplicación específicas. Algunos de los más populares incluyen:</p>
+                    <ul>
+                        <li><strong>Python:</strong> Conocido por su simplicidad y versatilidad</li>
+                        <li><strong>JavaScript:</strong> Esencial para el desarrollo web</li>
+                        <li><strong>Java:</strong> Ampliamente utilizado en aplicaciones empresariales</li>
+                        <li><strong>C++:</strong> Poderoso lenguaje para sistemas y aplicaciones de alto rendimiento</li>
+                        <li><strong>C#:</strong> Desarrollado por Microsoft para aplicaciones Windows</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="funcionamiento">
+            <h2>4. ¿Cuál es su funcionamiento?</h2>
+            <div class="image-text-container reverse">
+                <div class="image-container">
+                    <img src="img/IMAGEN-9.png" alt="Proceso de compilación e interpretación">
+                </div>
+                <div class="text-container">
+                    <p>Los lenguajes de programación funcionan a través de un proceso que convierte el código escrito por humanos en instrucciones que la computadora puede ejecutar. Este proceso permite que ideas abstractas se transformen en acciones concretas dentro de un sistema informático. Generalmente, involucra las siguientes etapas:</p>
+<ul>
+    <li><strong>Escritura del código:</strong> El programador redacta instrucciones utilizando la sintaxis específica del lenguaje elegido (por ejemplo, Python, Java o C++). Esta etapa requiere precisión y claridad para evitar errores.</li>
+    <li><strong>Compilación o interpretación:</strong> El código fuente se traduce a lenguaje máquina. En lenguajes compilados como C++, se genera un archivo ejecutable. En lenguajes interpretados como Python, el intérprete analiza y ejecuta el código línea por línea.</li>
+    <li><strong>Ejecución:</strong> La computadora ejecuta las instrucciones traducidas, realizando tareas como cálculos, manipulación de datos, interacción con el usuario o control de dispositivos.</li>
+    <li><strong>Retroalimentación y depuración:</strong> Si el programa no funciona como se esperaba, se revisa el código, se corrigen errores y se vuelve a ejecutar hasta lograr el resultado deseado.</li>
+</ul>
+
+<h3>Componentes principales del proceso de traducción y ejecución</h3>
+<ul>
+    <li><strong>Lexer (Analizador léxico):</strong> Divide el código en unidades mínimas llamadas <em>tokens</em>, como palabras clave, operadores y símbolos. Por ejemplo, en la línea <code>print("Hola")</code>, los tokens serían <code>print</code>, <code>(</code>, <code>"Hola"</code>, <code>)</code>.</li>
+    <li><strong>Parser (Analizador sintáctico):</strong> Verifica que los tokens estén organizados correctamente según las reglas del lenguaje. Detecta errores como paréntesis mal cerrados o estructuras mal formadas.</li>
+    <li><strong>Compilador/Intérprete:</strong> El compilador convierte todo el código fuente en un archivo ejecutable antes de correrlo. El intérprete, en cambio, traduce y ejecuta el código línea por línea en tiempo real. Ejemplos: C usa compilador, Python usa intérprete.</li>
+    <li><strong>Depurador:</strong> Herramienta que permite al programador identificar errores (bugs), analizar el flujo del programa, inspeccionar variables y corregir fallos. Es esencial para mejorar la calidad del software.</li>
+    <li><strong>Entorno de desarrollo (IDE):</strong> Plataforma que integra editor de código, depurador, compilador/intérprete y otras herramientas. Ejemplos populares incluyen Visual Studio Code, PyCharm y Eclipse.</li>
+</ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="caracteristicas">
+            <h2>5. Principales características de los lenguajes de programación</h2>
+            
+            <div class="caracteristicas-grid">
+                <div class="caracteristica">
+                    <h4>Simplicidad</h4>
+                    <p>Facilidad de aprendizaje y uso, con sintaxis clara y consistente que reduce la curva de aprendizaje.</p>
+                </div>
+                
+                <div class="caracteristica">
+                    <h4>Capacidad</h4>
+                    <p>Poder expresivo del lenguaje para resolver problemas complejos de manera eficiente.</p>
+                </div>
+                
+                <div class="caracteristica">
+                    <h4>Abstracción</h4>
+                    <p>Capacidad de ocultar detalles complejos y permitir trabajar con conceptos de alto nivel.</p>
+                </div>
+                
+                <div class="caracteristica">
+                    <h4>Eficiencia</h4>
+                    <p>Rendimiento del código generado en términos de velocidad y uso de recursos.</p>
+                </div>
+                
+                <div class="caracteristica">
+                    <h4>Estructuración</h4>
+                    <p>Organización del código en bloques lógicos que facilitan el mantenimiento y la escalabilidad.</p>
+                </div>
+                
+                <div class="caracteristica">
+                    <h4>Principio de localidad</h4>
+                    <p>Relacionar elementos que trabajan juntos, facilitando la legibilidad y mantenimiento del código.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="importancia">
+            <h2>6. Importancia de los lenguajes de programación</h2>
+            <div class="image-text-container">
+                <div class="image-container">
+                    <img src="img/IMAGEN-3.png" alt="Importancia de la programación">
+                </div>
+                <div class="text-container">
+                    <p>Los lenguajes de programación son fundamentales en la era digital porque:</p>
+<ul>
+    <li>Permiten automatizar tareas repetitivas, como el procesamiento de datos, generación de informes o envío de correos electrónicos, lo que ahorra tiempo y reduce errores humanos.</li>
+    <li>Facilitan la resolución de problemas complejos mediante algoritmos eficientes, como en la simulación de modelos climáticos, análisis genético o planificación logística.</li>
+    <li>Son la base del desarrollo de software y aplicaciones que usamos diariamente, desde sistemas operativos y navegadores web hasta apps móviles y videojuegos.</li>
+    <li>Impulsan la innovación tecnológica al permitir la creación de nuevas herramientas, plataformas digitales, dispositivos inteligentes y soluciones disruptivas en todos los sectores.</li>
+    <li>Permiten la creación de sistemas inteligentes y de aprendizaje automático, como asistentes virtuales, sistemas de recomendación, vehículos autónomos y modelos predictivos.</li>
+    <li>Son esenciales en campos como la medicina (diagnóstico asistido por IA, gestión de historiales clínicos), finanzas (trading algorítmico, detección de fraudes), educación (plataformas interactivas, simuladores) y entretenimiento (animación digital, motores de juego, efectos especiales).</li>
+    <li>Fomentan la conectividad global al ser la base de internet, redes sociales, servicios en la nube y plataformas colaborativas.</li>
+    <li>Contribuyen al desarrollo sostenible mediante soluciones tecnológicas para la gestión energética, agricultura inteligente y monitoreo ambiental.</li>
+</ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="utilidad">
+            <h2>7. ¿Para qué se utilizan los lenguajes de programación?</h2>
+            <div class="image-text-container reverse">
+                <div class="image-container">
+                    <img src="img/IMAGEN-7.png" alt="Utilidad de los lenguajes de programación">
+                </div>
+                <div class="text-container">
+                   <p>Los lenguajes de programación tienen aplicaciones en prácticamente todos los ámbitos de la sociedad moderna:</p>
+<ul>
+    <li><strong>Desarrollo web:</strong> Creación de sitios y aplicaciones web dinámicas, tiendas en línea, plataformas educativas y redes sociales utilizando lenguajes como HTML, CSS, JavaScript y PHP.</li>
+    <li><strong>Inteligencia artificial:</strong> Desarrollo de algoritmos de machine learning, redes neuronales, procesamiento de lenguaje natural y visión por computadora con lenguajes como Python, R y Julia.</li>
+    <li><strong>Ciencia de datos:</strong> Análisis, limpieza y visualización de grandes volúmenes de información para tomar decisiones estratégicas en negocios, salud y política. Se utilizan herramientas como Pandas, NumPy y Matplotlib.</li>
+    <li><strong>Desarrollo de videojuegos:</strong> Creación de experiencias interactivas en 2D y 3D, simulaciones y mundos virtuales con motores como Unity (C#) y Unreal Engine (C++).</li>
+    <li><strong>Sistemas embebidos:</strong> Programación de dispositivos electrónicos como microcontroladores, sensores y robots, esenciales en la automatización industrial, domótica y medicina.</li>
+    <li><strong>Automatización:</strong> Scripts para automatizar tareas repetitivas como el envío de correos, generación de reportes, pruebas de software y gestión de archivos, usando lenguajes como Bash, Python y PowerShell.</li>
+    <li><strong>Aplicaciones móviles:</strong> Desarrollo de apps para Android (Java/Kotlin) y iOS (Swift), incluyendo juegos, herramientas de productividad, redes sociales y servicios financieros.</li>
+    <li><strong>Finanzas:</strong> Creación de sistemas de banca digital, trading algorítmico, análisis de riesgos y detección de fraudes mediante programación estadística y modelos predictivos.</li>
+    <li><strong>Educación:</strong> Plataformas interactivas, simuladores, entornos virtuales de aprendizaje y herramientas de evaluación automatizada que mejoran la enseñanza y el acceso al conocimiento.</li>
+    <li><strong>Medicina:</strong> Desarrollo de software para diagnóstico asistido por IA, gestión de historiales clínicos, simulaciones quirúrgicas y monitoreo remoto de pacientes.</li>
+    <li><strong>Arte y diseño digital:</strong> Generación de gráficos, animaciones, música algorítmica y experiencias interactivas que combinan creatividad con lógica computacional.</li>
+</ul>
+
+                </div>
+            </div>
+        </section>
+        
+        <section id="aplicaciones">
+            <h2>8. ¿Qué se puede crear con los lenguajes de programación?</h2>
+            <div class="image-text-container">
+                <div class="image-container">
+                </div>
+            </div>
+            
+            <div class="aplicaciones-grid">
+                <div class="aplicacion">
+                    <div>🌐</div>
+                    <h4>Sitios web complejos</h4>
+                    <p>Desde simples páginas informativas hasta aplicaciones web completas</p>
+                </div>
+                
+                <div class="aplicacion">
+                    <div>📱</div>
+                    <h4>Aplicaciones móviles</h4>
+                    <p>Para iOS, Android y otras plataformas móviles</p>
+                </div>
+                
+                <div class="aplicacion">
+                    <div>🎮</div>
+                    <h4>Videojuegos</h4>
+                    <p>Desde simples juegos 2D hasta experiencias de realidad virtual</p>
+                </div>
+                
+                <div class="aplicacion">
+                    <div>🤖</div>
+                    <h4>Sistemas de IA</h4>
+                    <p>Redes neuronales, chatbots y sistemas de reconocimiento</p>
+                </div>
+                
+                <div class="aplicacion">
+                    <div>📊</div>
+                    <h4>Herramientas de análisis</h4>
+                    <p>Software para procesamiento y visualización de datos</p>
+                </div>
+                
+                <div class="aplicacion">
+                    <div>🔧</div>
+                    <h4>Sistemas operativos</h4>
+                    <p>El software fundamental que gestiona los recursos del hardware</p>
+                </div>
+                
+                <div class="aplicacion">
+                    <div>💻</div>
+                    <h4>Aplicaciones de escritorio</h4>
+                    <p>Programas para Windows, macOS y Linux</p>
+                </div>
+                
+                <div class="aplicacion">
+                    <div>🌍</div>
+                    <h4>Internet de las cosas</h4>
+                    <p>Conectar dispositivos físicos a internet</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 - Tipos de Lenguajes de Programación - Página Informativa</p>
+            <p>Explorando las maravillas que podemos crear llevando la programación al límite</p>
+        </div>
+    </footer>
+</body>
+</html>

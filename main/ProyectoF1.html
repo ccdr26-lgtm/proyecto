@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto F1</title>
+    <link rel="stylesheet" href="miestilo.css">
+    <style>
+        .seccion { display: none; }
+        .seccion.activa { display: block; }
+        .img-banderas figure {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        .img-banderas img {
+            width: 120px;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>F1 <img src="Img/Logo.jpg" class="imagen-inline"></h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><button class="btn-nav" onclick="mostrarSeccion('proyecto')">Inicio</button></li>
+            <li><button class="btn-nav" onclick="mostrarSeccion('reglas')">Reglas</button></li>
+            <li><button class="btn-nav" onclick="mostrarSeccion('circuitos')">Circuito</button></li>
+            <li><button class="btn-nav" onclick="mostrarSeccion('parrilla')">Parrilla 2025</button></li>
+            <li><button class="btn-nav" onclick="mostrarSeccion('leyenda')">Leyendas</button></li>
+            <li><button class="btn-nav" onclick="mostrarSeccion('escuderia')">Escuderia</button></li>
+            <li><button class="btn-nav" onclick="mostrarSeccion('lectura')">Lectura de tablas</button></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- INICIO -->
+        <section id="proyecto" class="seccion activa">
+            <article class="articulo">
+                <h2>¿Qué es?</h2>
+                <p>Para resumirlo y no enredarte, te contamos que la F1 es una competencia de carreras de la Federación Internacional del Automóvil (FIA) y en donde compiten vehículos de categoría monoplaza en la que participan equipos de dos pilotos cada uno. Los equipos compiten entre sí en este campeonato mundial que se divide en carreras que se realizan en diferentes países alrededor del mundo. El objetivo es ser el equipo con más puntos al final del campeonato para ganar el título de campeón mundial de la Fórmula 1.</p>
+                <h3>Qualy</h3>
+                <p>La importancia de esta es que determina en qué lugar de la parrilla arrancaran los pilotos en la carrera del domingo, dependiendo de qué tan veloces son en la pista. ¿Por qué es importante? Simplemente porque entre más atrás esté un piloto, más difícil será ganar la carrera o sumar puntos. Además, hay algunos circuitos en el calendario —especialmente los callejeros, como Mónaco y Arabia Saudita— en donde es más difícil adelantar a los rivales. En la F1, la clasificación se divide en tres rondas:</p>
+                <ul>
+                    <li><strong>Q1:</strong> los pilotos tienen 18 minutos para hacer su mejor tiempo. Los cinco más lentos son eliminados e iniciarán la carrera en los cinco últimos puestos de la parrilla.</li>
+                    <li><strong>Q2:</strong> los monoplazas empiezan desde cero y tienen 15 minutos para dar su mejor tiempo. Nuevamente, los cinco más lentos son eliminados e iniciarán la carrera entre los puestos 11 y 15 de la parrilla.</li>
+                    <li><strong>Q3:</strong> los 10 autos restantes tienen 12 minutos para registrar su mejor tiempo y obtener un buen lugar en la parrilla. Al final de la Q3, el piloto que consigue el mejor tiempo es premiado con la “pole position”, que equivale a arrancar en el primer lugar de la parrilla, una gran ventaja para el siguiente día.</li>
+                </ul>
+                <h4>Tipos de fórmulas</h4>
+                <ul>
+                    <li><strong>Fórmula 1 (F1):</strong> Es la categoría reina y la más tecnológicamente avanzada, con los presupuestos más altos y los coches más innovadores del mundo.</li>
+                    <li><strong>Fórmula 2 (F2):</strong> Una categoría de desarrollo crucial para la F1, donde los pilotos jóvenes perfeccionan sus habilidades antes de ascender. Utiliza coches estandarizados con diferencias significativas en potencia y tecnología frente a la F1.</li>
+                    <li><strong>Fórmula 3 (F3):</strong> Se encuentra un escalón por debajo de la F2 y sirve como un trampolín para los pilotos que aspiran a correr en categorías superiores, como la F2 y la F1.</li>
+                    <li><strong>Fórmula Regional (FR):</strong> Una categoría intermedia entre la F4 y la F3, diseñada para pilotos que han completado la F4 o categorías similares y necesitan perfeccionar sus habilidades antes de ascender.</li>
+                    <li><strong>Fórmula 4 (F4):</strong> Es la categoría de nivel de entrada en las carreras de fórmulas, ideal para pilotos jóvenes que están comenzando sus carreras en el automovilismo.</li>
+                    <li><strong>Fórmula E:</strong> Una categoría de carreras de monoplazas totalmente eléctricos, enfocada en el desarrollo de tecnología sostenible y la promoción de la electromovilidad.</li>
+                    <li><strong>IndyCar Series:</strong> Una importante categoría de monoplazas en Estados Unidos, diferente a la Fórmula 1, que también forma parte del panorama del automovilismo.</li>
+                </ul>
+            </article>
+        </section>
+        <!-- REGLAS -->
+        <section id="reglas" class="seccion">
+            <article class="articulo">
+                <h2> tipos de banderas </h2>
+                <div class="contenedor-img">
+                    <img src="Img/banderaV.jpg" class="contenedor-img">
+                </div>
+                <p> Ésta es la más habitual y, probablemente, la que menos se mencione. Indica que todo está transcurriendo con normalidad y no hay ningún incidente. Además, esta bandera se saca por sectores. Por tanto, su presencia solo significa que está todo bien en el sector en el que se encuentre, no en todo el circuito.</p>
+            <div class="contenedor-img">
+                    <img src="Img/banderaA.jpg" class="contenedor-img">
+                </div>
+                <p> Esta bandera, que también va por sectores, aparece cuando hay un accidente que pone en riesgo de cierta forma a los demás pilotos. Por ejemplo, porque el coche del accidente quede cerca del trazado, porque haya piezas de fibra de carbono sobre el asfalto, Si un piloto se encuentra esta bandera, significa que puede seguir con su ritmo normal, pero teniendo especial cuidado y le queda terminantemente prohibido adelantar. A no ser, claro está, que un coche de delante ruede anómalamente despacio o se pare. Puede ir acompañada de las letras «SC», es decir, que sale el Safety Car y todos tendrá que aminorar la marcha y se juntarán rodando tras él.</p>
+            <div class="contenedor-img">
+                    <img src="Img/BanderaR.jpg" class="contenedor-img">
+                </div>
+                <p> En el caso de que haya habido un accidente mayor y se haya puesto la cosa realmente fea, se sacará bandera roja y todo se parará. Esto no significa que la carrera se cancele, ojo, solo que se detiene. Todos los coches vuelven a box y cuando vuelve todo a estar en regla, se reanuda la carrera con los pilotos en las posiciones en las que estaban antes de parar.También puede salir esta bandera roja por fuertes lluvias, por cierto, cuando la visibilidad es tan reducida que los pilotos apenas pueden pilotar y la seguridadse ve comprometida.</p>
+             <div class="contenedor-img">
+                    <img src="Img/banderaN.jpg" class="contenedor-img">
+             </div>
+                <p> Esta bandera solo aparecerá en casos extremos, cuando directamente se decida cancelar el evento. Por suerte, en los últimos años la hemos visto muy poco, y es que esta bandera era la gran temida en otro tiempo, cuando los fuertes accidentes era probable que terminasen con la vida de los pilotos implicados. </p>
+            <div class="contenedor-img">
+                    <img src="Img/BanderaAz.jpg" class="contenedor-img">
+             </div>
+                <p> A diferencia de las anteriores, esta bandera es individual para el piloto y no se aplica a todos en un sector. Lo que viene a decir es que el piloto al que se la enseñan tiene que dejar pasar al piloto que viene por detrás y que le va a doblar. Si eres nuevo en esto, te adelanto que la bandera azul es protagonista de muchas polémicas, sobre si la maniobra para dejar pasar no ha sido segura, si ni siquiera ha dejado pasar. </p>
+                <div class="contenedor-img">
+                    <img src="Img/BanderaB,N.jpg" class="contenedor-img">
+             </div>
+                <p> Esta bandera quizá no sea tan famosa como el resto, pero es bastante importante. Sirve a modo de advertencia a un piloto cuando hace algo antideportivo, pero no excesivamente grave. De tal forma que, si se repitiese algo similar y le volviesen a enseñar otra bandera negra y blanca, sería expulsado como si fuese una bandera negra.</p>
+                <div class="contenedor-img">
+                    <img src="Img/BanderaMeta.jpg" class="contenedor-img">
+             </div>
+                <p> La bandera de las banderas. La preferida de un piloto y la más honorable. Ésta es la bandera que ve el ganador de la carrera al pasar por línea de meta por última vez. Por cierto, todas están fijadas por la FIA, lo que significa que serán las mismas para todas las categorías. Oficialmente, tienen dos o tres banderas más, pero raramente se ven en F1 o ni siquiera se utilizan aquí. </p>
+                <p> Más banderas Ya sabes que la F1 funciona bajo el paraguas normativo de la FIA. Sin embargo, también hay ciertas modificaciones respecto a cualquier otra categoría que normalmente van enfocadas en aumentar el espectáculo y hacerlo más sencillo de entender para los espectadores. Por eso, quizá viendo otras carreras fuera de la Fórmula 1 te encuentres con unas banderas diferentes, como las de líneas rojas y amarillas.</p>
+
+                <h3>Tipo de neumáticos</h3>
+                <p> ¿Qué decide cuál se elige y cuál se descarta? Pues lo exigente que sea el circuito. Si se prevé que los neumáticos no van a sufrir en absoluto, se escogen los más blandos (C3, C4 y C5). Si el circuito es muy agresivo con ellos, entonces se eligen los más duros (C1, C2 y C3). Y si el asunto está más equilibrado, entonces se escoge la gama media (C2, C3, C4).<p></p>
+                <div class="contenedor-img">
+                    <img src="Img/neoB.png"  class="contenedor-img"><img src="Img/neoAm.png" ><img src="Img/neoRj.png" class="contenedor-img">
+             </div>
+            <p> Por lo tanto, en cada GP tendremos un neumático duro (blanco), uno medio (amarillo) y uno blando (rojo), con estas posibilidades:</p>
+             <p>Duro: C1, C2 o C3</p>
+             <p>Medio: C2, C3 o C4</p>
+             <p>Blando: C3, C4 o C5.</p>
+
+             <p>Neomaticos de lluvia</p>
+             <p>Aquí la cosa es más simple.Solo hay dos y se utilizará uno u otro en función de la cantidad de agua que haya en pista.</p>
+             <div class="contenedor-img">
+                    <img src="Img/neoV.png"  class="contenedor-img"><img src="Img/neoAz.png" class="contenedor-img" >
+             </div>
+             <p>Los neumáticos intermedios se utilizan cuando la pista está mojada con una capa muy fina de agua o cuando hay zonas secas y zonas mojadas. Ten en cuenta que hay circuitos tan largos que es habitual tener una parte mojada y otra seca; en estas condiciones, son mejores los intermedios. Por otra parte, si la pista está empapada por todas partes y con una capa de agua importante, entonces los de lluvia extrema son los más apropiados, porque son capaces de evacuar más agua.</p>
+
+             <p>Colores de los neumáticos</p>
+             <p>Como resumen de este lío, cada neumático tiene su propio color:</p>
+             <p>Duro: blanco</p>
+             <p> amarillo</p>
+             <p>Blando: rojo</p>
+             <p>Intermedio: verde</p>
+             <p>Lluvia extrema: azul</p>
+
+             <h4>Reparticion de puntos</h4>
+             <p>Reparticion de puntos por posicion:</p>
+             <p>1º: 25 puntos</p>
+             <p>2º: 18 puntos</p>
+             <p>3º: 15 puntos</p>
+             <p>4º: 12 puntos</p>
+             <p>5º: 10 puntos</p>
+             <p>6º: 8 puntos</p>
+             <p>7º: 6 puntos</p>
+             <p>8º: 4 puntos</p>
+             <p>9º: 2 puntos</p>
+             <p>10º: 1 punto</p>
+
+             <h5> Significado de las siglas</h5>
+             <p>Siglas de clasificacion y estado de carrera</p>
+             <p>DNF (Did Not Finish):Indica que un piloto no terminó la carrera.</p>
+             <p>DNS (Did Not Start):Significa que un piloto no inició la carrera.</p>
+             <p>SC (Safety Car):Es un coche de seguridad que entra en pista para neutralizar temporalmente la carrera.</p>
+             <p>VSC (Virtual Safety Car):Es un modo en el que los pilotos deben reducir la velocidad y mantenerla controlada en todo el circuito, a menudo debido a la presencia de escombros en pista.</p>
+             <p>Siglas de componentes del coche:</p>
+             <p>DRS (Drag Reduction System): Es un sistema que permite al piloto reducir la resistencia aerodinámica abriendo una aleta móvil en el alerón trasero para facilitar los adelantamientos.</p>
+             <p>MGU-K (Motor Generator Unit - Kinetic):Es una parte de la unidad de potencia que convierte la energía de frenado en electricidad para recargar las baterías y, a su vez, puede entregar esa energía para acelerar el coche.</p>
+             <p>MGU-H (Motor Generator Unit - Heat):Transforma la energía térmica del sistema de escape en energía eléctrica para recargar las baterías o para alimentar el MGU-K.</p>
+             <p> términos relevantes:</p>
+             <p>HANS (Head And Neck Support):Es un dispositivo de seguridad obligatorio para los pilotos que se sujeta al casco para proteger el cuello y la cabeza en caso de accidente.</p>
+            <p>Q1, Q2, Q3:Son las tres partes de la sesión de clasificación, donde los pilotos luchan por conseguir el mejor tiempo para determinar el orden de salida de la carrera.</p></article>
+             </div>
+        </section>
+
+        <!-- CIRCUITOS -->
+        <section id="circuitos" class="seccion">
+            <article class="articulo">
+                <h2> Circuito</h2>
+                <div class="contenedor-img">
+                    <img src="Img/circuitos.PNG" class="contenedor-img">
+                </div>
+                <h3> Sector de cada circuito </h3>
+                <p>Las pistas de F1 se dividen en tres sectores. Cada sector tiene aproximadamente la misma longitud y está delimitado por líneas blancas que cruzan la pista. Los vehículos se cronometran en cada sector. Esta información es útil para que los equipos determinen el rendimiento de sus pilotos en comparación con otros en la misma sección del circuito. Cuando un vehículo termina un sector, a su tiempo se le asigna un color morado, verde o amarillo.</p>
+                <p>Púrpura: Un sector morado significa que el tiempo es el más rápido de cualquier piloto en esa sección del circuito. Al ver la F1, puede que veas a un piloto con un sector morado que se vuelve verde. Esto ocurre cuando un piloto detrás de él ha ido incluso más rápido que él en el mismo sector. Cuando un piloto completa una vuelta con tres sectores morados, acaba de marcar el tiempo de vuelta más rápido.
+                <p>Verde Un sector verde es la mejor marca personal del piloto. Aunque sea su mejor marca, otro piloto ha ido más rápido.</p>
+                <p>Amarillo Un sector amarillo es más lento que los otros tiempos del piloto en ese sector. Los sectores amarillo y verde solo se refieren a las vueltas anteriores del piloto, mientras que el sector morado abarca a todos los pilotos</p></article>
+            </article>
+        </section>
+        <!-- PARRILLA -->
+        <section id="parrilla" class="seccion">
+             <article class="articulo">
+                <h2> Parrilla </h2>
+                <div class="contenedor-img">
+                    <img src="Img/parrilla.PNG" class="contenedor-img">
+                </div>
+            <h3>Campeonato de pilotos</h3>
+                <p>El Campeonato de Pilotos de F1 funciona acumulando puntos en cada Gran Premio de la temporada.Los primeros 10 pilotos en cada carrera obtienen puntos, con 25 para el ganador y una menor cantidad para cada puesto subsiguiente, más un punto extra por la vuelta más rápida si se termina en el top 10. El piloto que sume la mayor cantidad de puntos al final de la temporada, después de todos los grandes premios, es declarado el campeón mundial de pilotos.</p>
+                <h4>¿Cómo se determina el ganador?</h4>
+                <p>Acumulación Total:</p>
+                <p>El piloto que acumule la mayor cantidad de puntos a lo largo de toda la temporada es coronado Campeón Mundial de Pilotos.</p>
+                <p>Proclamación del Título: El título puede asegurase antes de que termine la temporada si un piloto alcanza tantos puntos que ningún otro piloto puede igualar su total, incluso si quedan carreras por disputar.</p>
+                <p>¿Quién regula el campeonato? La FIA: La Federación Internacional del Automóvil (FIA) es el organismo encargado de organizar el campeonato, establecer las reglas y supervisar que se cumplan durante toda la temporada..</p>
+               </article>
+        </section>
+        <!-- LEYENDAS -->
+        <section id="leyenda" class="seccion">
+            <article class="articulo">
+                <h2> Leyendas </h2>
+                <div class="contenedor-img">
+                    <img src="Img/leyendas.PNG" class="contenedor-img">
+                </div>
+            <h3> Pilotos que fueron leyenda y por que:</h3>
+                <p>Juan Manuel Fangio (Argentina): Corrió en los años 50, Ganó 5 Campeonatos Mundiales (1951, 1954, 1955, 1956, 1957), Tiene el récord de mayor porcentaje de victorias en la historia de la F1 (casi 50%), Fue pionero y dominó con varias escuderías (Alfa Romeo, Mercedes, Ferrari, Maserati).</p>
+                <p>Jack Brabham (Australia): Ganó 3 Campeonatos Mundiales (1959, 1960, 1966), Único piloto en ser campeón con un coche construido por su propia escudería: Brabham, Innovador en la parte técnica y mecánica, ayudó a evolucionar la F1..</p>
+                <p>Jim Clark (Escocia): Campeón en 1963 y 1965 con Lotus, Uno de los talentos más naturales y rápidos de la historia, Fue dominante en la década de los 60 hasta su muerte en una carrera de Fórmula 2 (1968)./p>
+                <p>Jackie Stewart (Escocia):Ganó 3 Campeonatos (1969, 1971, 1973), Conocido como el “Flying Scot”, Importante no solo por sus títulos, sino por su lucha por la seguridad en la F1, reduciendo accidentes mortales..</p>
+                <p>Niki Lauda (Austria):Ganó 3 Campeonatos (1975, 1977, 1984),Sobrevivió a un terrible accidente en Nürburgring 1976, con graves quemaduras, y regresó a correr solo 6 semanas después, Fue piloto de Ferrari, McLaren y luego directivo en Mercedes, clave en la era moderna.</p>
+                <p>Alain Prost (Francia):Campeón 4 veces (1985, 1986, 1989, 1993), Apodado “El Profesor” por su estilo calculador e inteligente, Protagonizó una de las rivalidades más famosas con Ayrton Senna.</p>
+                <p>Ayrton Senna (Brasil):Ganó 3 Campeonatos (1988, 1990, 1991), Famoso por su velocidad en clasificación y su habilidad en lluvia, Idolatrado en Brasil y en todo el mundo, Falleció en un accidente en Imola 1994, lo que marcó profundamente la historia de la F1.</p>
+                <p>Michael Schumacher (Alemania):Ganó 7 Campeonatos (1994, 1995 con Benetton; 2000-2004 con Ferrari), Dominó la era Ferrari con 5 títulos consecutivos, Récords históricos de victorias y poles (luego superados por Hamilton), Considerado junto con Senna y Hamilton uno de los más grandes de todos los tiempos</p>
+               </article>
+        </section>
+        <!-- ESCUDERIA -->
+        <section id="escuderia" class="seccion">
+              <article class="articulo">
+                <h2> Escuderias</h2>
+                <p> Escuderías de F1 para la temporada 2025</p>
+                <p>Red Bull Racing</p>
+                <p>Mercedes-AMG Petronas F1 Team</p>
+                <p>Scuderia Ferrari</p>
+                <p>McLaren Formula 1 Team</p>
+                <p>Aston MartinAramco Formula One Team</p>
+                <p>BWT Alpine F1 Team</p>
+                <p>Williams Racing</p>
+                <p>Visa Cash App Racing Bulls Formula One Team</p>
+                <p>Stake F1 Team Kick Sauber</p>
+                <p>Haas F1 Team</p>
+
+            <h3>Campeonato de Costructores</h3>
+                <p> El Campeonato de Constructores (o de Escuderías) de la F1 es un trofeo que se otorga a la escudería que acumula la mayor cantidad de puntos al final de la temporada de Fórmula 1. Los puntos de ambos pilotos de un mismo equipo se suman, y el equipo con el total más alto gana el campeonato, premiando así la constancia y el rendimiento colectivo a lo largo de la temporada.</p>
+               <h4>Cómo funciona el Campeonato de Constructores</h4>
+                <p> Puntos por piloto:</p>
+                <p>Cada piloto suma puntos en su cuenta personal según su posición en cada carrera,similar al Campeonato de Pilotos.</p>
+                <p>Suma de puntos del equipo:</p>
+                <p>Los puntos obtenidos por los dos pilotos de la escudería se suman para formar el total de puntos del equipo.</p>
+                <p>El ganador:</p>
+                <p>Al final de la temporada, la escudería con el mayor número total de puntos es declarada ganadora del Campeonato Mundial de Constructores.</p>
+                <p>¿Por qué es importante?</p>
+                <p>Recompensa el éxito colectivo: 
+                <p>A diferencia del Campeonato de Pilotos, que premia la gloria individual, el Campeonato de Constructores galardona la constancia y el éxito de todo el equipo.</p>
+                <p>Influye en la estrategia de los equipos: </p>
+                <p>Los equipos a veces deben adoptar estrategias que beneficien al equipo en su conjunto, priorizando la obtención de puntos para el Campeonato de Constructores sobre la victoria individual de un piloto, según se indica en un artículo de Formula 1.</p>
+                <p>Ventajas en la pista: </p>
+                <p>El resultado del Campeonato de Constructores puede determinar aspectos prácticos como la ubicación del garaje en el pit lane, lo que puede suponer una ventaja durante la temporada.</p>
+                </article>
+        </section>
+        <!-- LECTURA DE TABLAS -->
+        <section id="lectura" class="seccion">
+            <article class="articulo">
+                <h2> tablas de tiempos</h2>
+                <p>La tabla de tiempos en la F1 muestra la posición actual de los pilotos, sus apellidos abreviados y la escudería. También indica la diferencia de tiempo con el piloto que va en primer lugar, el tipo de neumáticos utilizados (S, M, H), si un piloto se retiró (&quot;out&quot;) o ha salido de boxes (&quot;pit exit&quot;) y su mejor vuelta de la carrera (con un reloj morado).</p>
+                <p>Elementos principales de la tabla de tiempos:</p>
+                <p>Posición: Un número a la izquierda que indica el lugar actual del piloto en la carrera.</p>
+                <p>Piloto y Escudería: El apellido abreviado del piloto y el nombre o logo de su equipo.</p>
+                <p>Tiempo (Líder): La diferencia en tiempo que un piloto tiene con respecto al líder de la carrera.</p>
+                <p>Tiempo (Intervalo): La diferencia de tiempo que un piloto tiene con el piloto que le precede en la pista.</p>
+                <p>Neumáticos: Abreviaturas que indican el compuesto de los neumáticos (S para blandos, M para medios, H para duros) o si se trata de neumáticos de lluvia (verde para lluvia leve, azul para pista mojada). </p>
+                <p>Símbolos:</p>
+                <p>Reloj Morado Indica que el piloto ha marcado la vuelta más rápida de toda la carrera.</p>
+                <p>Flechas verdes o rojas: Muestran si un piloto está subiendo o bajando posiciones.</p>
+                <p>Pit: Indica que un piloto se dirige o está en la zona de pits para una reparación o cambio de neumáticos.</p>
+                <p>Pit Exit: Señala que un piloto está saliendo de la zona de pits.</p>
+               <p> Out:Indica que el piloto se ha retirado de la carrera.</p>
+                <p>Cómo se utiliza:La tabla de tiempos ofrece una visión instantánea de la situación de la carrera permitiendo a los espectadores y equipos seguir el rendimiento de cada piloto, sus estrategias de neumáticos y las posiciones relativas en la pista.</p>
+<p></p>
+            <h3>Tabla de telemtria</h3>
+                <p>La tabla de telemetría en la F1 transmite datos en tiempo real desde el coche a los ingenieros,quienes los analizan en gráficas para optimizar el rendimiento. Esta información, captada por sensores del motor, neumáticos, frenos y acelerador, permite identificar puntos débiles del coche y del pilotaje, comparar pilotos, y tomar decisiones estratégicas durante la carrera.</p>
+                 <p>¿Qué datos se recopilan y cómo se interpretan?</p>
+                 <p>La telemetría abarca una gran variedad de datos que se visualizan en gráficas para su análisis:</p>
+                 <p>Velocidad:Gráfica azul que muestra la velocidad del coche en cada punto del circuito, permitiendo identificar las zonas de máxima velocidad y identificar dónde se pierde tiempo.</p>
+                 <p>Acelerador:La gráfica amarilla indica el porcentaje de presión que el piloto aplica al acelerador, mostrando cómo modula la potencia durante la vuelta, especialmente antes y durante las curvas.</p>
+                <p>Freno:La línea negra representa la presión sobre el pedal del freno, lo que revela la intensidad y el momento de la frenada de cada piloto.</p>
+                 <p>Marchas:</p>
+                <p>Una gráfica morada y cuadriculada indica el número de marcha que el coche está utilizando, lo que ayuda a entender la agresividad del pilotaje y el uso del motor.</p>
+                <p>Revoluciones del motor: Representadas por una línea roja, las RPM del motor son fundamentales para entender el rendimiento mecánico y cómo el piloto explota la potencia.</p>
+               <p>Delta de tiempo:</p>
+              <p>Muestra la diferencia en centésimas de segundo entre la vuelta de un piloto y el mejor tiempo de la sesión, siendo una herramienta clave para comparar el rendimiento entre pilotos.</p>
+                <p>¿Para qué se utiliza la telemetría?</p>
+                <p>Optimización del pilotaje:Los ingenieros analizan los patrones de aceleración y frenada para sugerir ajustes en el estilo de conducción del piloto y mejorar su consistencia.</p>
+                <p>Configuración del coche:Identificar áreas de debilidad, como una velocidad mínima baja en una curva, permite a los ingenieros ajustar la configuración (setup) del coche para optimizar el rendimiento.</p>
+                <p>Control del estado del vehículo: La telemetría también monitoriza el estado de componentes como el motor, la suspensión y los neumáticos, prediciendo posibles fallos y permitiendo ajustes proactivos.</p>
+                <p>Análisis de incidentes: En caso de un incidente o contacto entre coches, la telemetría sirve como un árbitro, permitiendocomparar los datos y determinar si hubo un error de cálculo.</p>
+                <p>Comparación de pilotos: Facilita un análisis detallado del rendimiento de cada piloto en los distintos micro sec
+        </section>
+    </main>
+    <footer class="pie">
+        Valeria Avila Alvarez - Hernandez Albañil Irene
+    </footer>
+    <script>
+        function mostrarSeccion(id) {
+            document.querySelectorAll('.seccion').forEach(sec => sec.classList.remove('activa'));
+            document.getElementById(id).classList.add('activa');
+        }
+    </script>
+</body>
+</html>
